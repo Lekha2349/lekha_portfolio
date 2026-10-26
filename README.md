@@ -1,19 +1,135 @@
-# Lekha Neduri Portfolio: Guide
+✨ Sri lekha — Portfolio
 
-## Preview on your computer
-Double-click `index.html`. It opens in your browser. (Thumbnails need internet.)
+Welcome to my personal portfolio! I'm Lekha Neduri, a 2026 Electronics and Communication Engineering (ECE) graduate interested in Social Media Operations, Content Coordination, Digital Marketing, and Data Analytics.
 
-## Publish free on GitHub Pages
-1. Sign in at github.com and click New repository. Name it `portfolio` (or `Lekha2349.github.io` for a shorter link). Set it to Public.
-2. Click "uploading an existing file", drag in `index.html`, then Commit changes.
-3. Open Settings > Pages. Under Build and deployment, choose "Deploy from a branch", select branch `main` and folder `/ (root)`, then Save.
-4. Wait 1-2 minutes. Your site will be at `https://Lekha2349.github.io/portfolio/`.
-To update later: open the repo, click index.html, click the pencil icon, edit, and Commit.
+I'm actively seeking part-time and full-time entry-level opportunities in Hyderabad, remote roles, Chennai, and Bengaluru.
 
-## Where to edit (open index.html in a text editor, search for these)
-- Colours: `:root{` at the top of the CSS.
-- Contact details: search `srilekhaneduri0@gmail.com` and `9014188706` (each appears twice) and the "Contact" section.
-- Job preferences and locations: the hero `chips` and the section `id="availability"`.
-- YouTube links: `const videos=[` near the bottom (id = text after /shorts/).
-- Power BI / GitHub link: section `id="analytics"`.
-- To add real project names once verified, add cards inside the analytics section.
+🌐 Live Portfolio
+
+Once GitHub Pages deployment is complete, visit:
+
+https://lekha2349.github.io/lekha_portfolio/
+
+💻 Preview on Your Computer
+
+Download or extract the portfolio ZIP file.
+
+Open the extracted folder.
+
+Double-click index.html to open the website in your browser.
+
+An internet connection may be required for external thumbnails, fonts, or other online assets.
+
+🚀 Publish Using GitHub Pages
+
+This portfolio is hosted for free using GitHub Pages.
+
+Sign in to GitHub.
+
+Open my repository: Lekha2349/lekha_portfolio.
+
+Upload index.html and any required supporting files if they are not already uploaded.
+
+Open Settings → Pages.
+
+Under Build and deployment, select Deploy from a branch.
+
+Choose branch main and folder /(root).
+
+Click Save.
+
+Wait for deployment to finish, then visit the live portfolio link above.
+
+🛠️ Skills
+
+Social Media & Content
+
+YouTube Shorts creation
+
+Content presentation and visual storytelling
+
+Titles and descriptions
+
+Basic content planning
+
+Creative Tools
+
+Canva Video Editor
+
+AI-assisted creative tools
+
+Basic video transitions and animations
+
+Analytics & Technical
+
+Microsoft Power BI
+
+Basic dashboard development
+
+Data visualization
+
+🎬 My Proud YouTube Videos
+
+These selected videos showcase my personal interest in content creation, visual storytelling, and short-form video editing.
+
+Proud Video 1
+
+Proud Video 2
+
+Proud Video 3
+
+Proud Video 4
+
+Visit My YouTube Channel
+
+📊 Power BI & Data Analytics Projects
+
+Explore my Power BI dashboard projects on GitHub:
+
+View My Power BI Projects
+
+📍 Job Preferences
+
+Employment: Part-time and full-time
+
+Preferred locations: Hyderabad, Remote, Chennai, and Bengaluru
+
+Target roles: Social Media Operations, Social Media Coordinator, Content Operations, Social Media Analyst, and Digital Marketing Associate
+
+📬 Contact
+
+Name: Lekha Neduri
+
+Email: srilekhaneduri0@gmail.com
+
+Phone: +91 90141 88706
+
+Recruiters and hiring teams are welcome to contact me regarding suitable entry-level opportunities.
+
+✏️ How to Update This Portfolio
+
+To update the website:
+
+Open index.html in a text editor, such as Visual Studio Code or Notepad.
+
+Find the relevant content or CSS section.
+
+Edit the details and save the file.
+
+Upload the updated file to this repository and commit the changes.
+
+Where to Make Changes
+
+Colours: Search for :root in the CSS section.
+
+Contact details: Search for the email address or phone number.
+
+Job preferences: Search for id="availability" and the location chips.
+
+YouTube links: Search for const videos = [ in the JavaScript.
+
+Power BI projects: Search for id="analytics".
+
+After committing updated files, GitHub Pages will publish the changes automatically once deployment finishes.
+
+© 2026 Lekha Neduri. All rights reserved.
