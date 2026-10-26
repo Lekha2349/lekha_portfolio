@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lekha Neduri | Social Media & Content Operations Portfolio</title>
+<meta name="description" content="Portfolio of Lekha Neduri, 2026 ECE graduate seeking entry-level social media operations, content operations and digital marketing roles.">
+<style>
+/* ===== EDIT COLOURS HERE ===== */
+:root{--navy:#15152B;--purple:#7C3AED;--pink:#EC4899;--blue:#38BDF8;--lav:#F3E8FF;--white:#fff;
+--grad:linear-gradient(135deg,#7C3AED,#EC4899);--r:20px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;line-height:1.65;color:var(--navy);background:var(--white)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:80px 0}
+.dark{background:var(--navy);color:#fff}
+.light{background:var(--lav)}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:14px}
+.lead{max-width:70ch;margin-bottom:34px;opacity:.92}
+.btn{display:inline-block;padding:13px 26px;border-radius:99px;background:var(--grad);color:#fff;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:1rem;box-shadow:0 8px 22px rgba(124,58,237,.35);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(236,72,153,.4)}
+.btn.ghost{background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.55);box-shadow:none}
+.btn.blue{background:linear-gradient(135deg,#0284c7,#7C3AED)}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff;border-radius:var(--r);padding:26px;box-shadow:0 10px 30px rgba(21,21,43,.1);transition:transform .25s}
+.card:hover{transform:translateY(-5px)}
+.glass{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:var(--r);padding:26px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:99px;font-weight:700;font-size:.95rem;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(21,21,43,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:Georgia,serif;font-weight:700;color:#fff;text-decoration:none;font-size:1.2rem}
+.links{display:flex;gap:6px;list-style:none;padding:0}
+.links a{color:#e9ddff;text-decoration:none;padding:8px 12px;border-radius:99px;font-size:.95rem}
+.links a:hover{background:rgba(255,255,255,.14);color:#fff}
+.menu{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}
+/* hero */
+#home{background:radial-gradient(circle at 80% 10%,rgba(56,189,248,.35),transparent 40%),linear-gradient(135deg,#15152B 0%,#5B21B6 55%,#EC4899 130%);color:#fff;padding:90px 0 80px}
+#home h1{font-size:clamp(2.3rem,7vw,4.2rem);animation:rise .8s both}
+.role{font-size:clamp(1.15rem,3vw,1.6rem);font-weight:700;color:#7dd3fc;margin:10px 0 18px}
+.badge{display:inline-block;background:var(--grad);padding:12px 22px;border-radius:14px;font-weight:800;margin:24px 0 6px;box-shadow:0 8px 24px rgba(236,72,153,.4)}
+#home p.intro{max-width:64ch}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+/* about */
+.about{display:grid;gap:26px;grid-template-columns:1.4fr 1fr}
+.about ul,.team ul{list-style:none;padding:0}
+.about li{padding:10px 0 10px 30px;position:relative}
+.about li::before{content:"✦";position:absolute;left:0;color:var(--pink)}
+/* skills */
+.skill h3{font-size:1.2rem;margin:10px 0}
+.skill .ic{font-size:2rem;width:58px;height:58px;display:grid;place-items:center;border-radius:16px;background:var(--lav)}
+.skill ul{padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.skill li{background:var(--lav);color:#4c1d95;padding:6px 12px;border-radius:99px;font-size:.9rem;font-weight:600}
+.skill:nth-child(2) li{background:#fce7f3;color:#9d174d}
+.skill:nth-child(3) li{background:#e0f2fe;color:#075985}
+.skill:nth-child(4) li{background:#ede9fe;color:#5b21b6}
+/* videos */
+.vid{padding:0;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2)}
+.thumb{aspect-ratio:9/12;background:var(--grad);display:grid;place-items:center;font-size:3rem;overflow:hidden;position:relative}
+.thumb img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .4s}
+.vid:hover .thumb img{transform:scale(1.05)}
+.vid .body{padding:18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.vid .btn{padding:10px 18px;font-size:.9rem}
+.note{margin-top:26px;opacity:.9;max-width:70ch}
+/* analytics */
+#analytics{position:relative;overflow:hidden}
+.dash{display:flex;align-items:flex-end;gap:10px;height:150px;margin:6px 0 24px}
+.dash span{flex:1;border-radius:8px 8px 0 0;background:linear-gradient(var(--blue),var(--purple));animation:grow 1.2s both}
+@keyframes grow{from{transform:scaleY(0)}}
+.dash span{transform-origin:bottom}
+.panel{background:var(--navy);border-radius:var(--r);padding:26px;color:#fff;max-width:520px}
+.analytics{display:grid;gap:34px;grid-template-columns:1.2fr 1fr;align-items:center}
+/* bring */
+.team .card{border-top:5px solid var(--pink)}
+.team .card:nth-child(3n+2){border-color:var(--purple)}
+.team .card:nth-child(3n){border-color:var(--blue)}
+/* availability */
+#availability{background:linear-gradient(135deg,#15152B,#4C1D95 60%,#9D174D);color:#fff}
+.emp{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:24px 0}
+.emp .glass{font-size:1.3rem;font-weight:800;text-align:center}
+.loc{background:#fff;color:var(--navy);border:0;font-size:1.05rem;padding:12px 20px}
+.loc:nth-child(1){border-bottom:4px solid var(--purple)}.loc:nth-child(2){border-bottom:4px solid var(--blue)}.loc:nth-child(3){border-bottom:4px solid var(--pink)}.loc:nth-child(4){border-bottom:4px solid var(--purple)}
+/* contact */
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:18px 0}
+.contact dt{font-weight:700;color:var(--purple)}
+.contact a{color:var(--purple);font-weight:600}
+footer{background:var(--navy);color:#cbbff0;text-align:center;padding:40px 20px}
+footer strong{color:#fff;font-family:Georgia,serif;font-size:1.3rem}
+.top{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;background:var(--grad);color:#fff;text-decoration:none;display:grid;place-items:center;font-size:1.3rem;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+@media(max-width:820px){
+.menu{display:block}
+.links{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--navy);padding:10px 20px 18px}
+.links.open{display:flex}
+.about,.analytics{grid-template-columns:1fr}
+section{padding:60px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main navigation"><div class="wrap">
+<a class="logo" href="#home">Lekha Neduri</a>
+<button class="menu" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
+<ul class="links" id="links">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#work">My Work</a></li><li><a href="#analytics">Analytics</a></li><li><a href="#availability">Availability</a></li><li><a href="#contact">Contact</a></li>
+</ul></div></nav>
+
+<header id="home"><div class="wrap">
+<h1>Hi, I'm Lekha Neduri 👋</h1>
+<p class="role">Aspiring Social Media &amp; Content Operations Professional</p>
+<p class="intro">I'm a 2026 ECE graduate passionate about social media content creation, digital platforms, creative video editing, and data analytics. I enjoy creating short-form videos, exploring creative tools, and developing Power BI dashboards. I'm eager to apply my skills, learn from a professional team, and grow in social media and digital operations.</p>
+<div class="badge">Actively Seeking Part-Time &amp; Full-Time Opportunities</div>
+<div class="chips" aria-label="Preferred locations">
+<span class="chip">📍 Hyderabad</span><span class="chip">💻 Remote</span><span class="chip">📍 Chennai</span><span class="chip">📍 Bengaluru</span>
+</div>
+<div class="btns"><a class="btn" href="#work">Explore My Work</a><a class="btn ghost" href="#contact">Contact Me</a></div>
+</div></header>
+
+<section id="about" class="light"><div class="wrap">
+<h2>About Me</h2>
+<div class="about">
+<div class="card"><p>I'm a 2026 Electronics and Communication Engineering graduate interested in social media operations, content coordination, digital content creation, and analytics. Through my YouTube content creation, I've explored short-form video editing, content presentation, titles, descriptions, and creative workflows. I also have basic Power BI dashboard development experience. I'm actively seeking an opportunity where I can apply my skills, learn industry practices, and contribute to a creative or digital operations team.</p></div>
+<div class="card" style="background:var(--navy);color:#fff"><h3>My interests</h3>
+<ul><li>Social media platforms and content workflows</li><li>Short-form video creation and editing</li><li>Content organization and quality checking</li><li>Digital engagement and performance reporting</li><li>Data visualization and analytics</li></ul></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2><p class="lead">The tools and strengths I'm building as a fresher.</p>
+<div class="grid">
+<div class="card skill"><div class="ic">🎬</div><h3>Social Media &amp; Content</h3><ul><li>YouTube Shorts creation</li><li>Content presentation</li><li>Titles and descriptions</li><li>Basic content planning</li><li>Visual storytelling</li><li>Content quality checking</li></ul></div>
+<div class="card skill"><div class="ic">🎨</div><h3>Creative Tools</h3><ul><li>Canva Video Editor</li><li>AI-assisted creative tools</li><li>Basic video transitions and animations</li></ul></div>
+<div class="card skill"><div class="ic">📊</div><h3>Analytics &amp; Technical</h3><ul><li>Microsoft Power BI</li><li>Basic dashboard development</li><li>Data visualization</li><li>Data analysis fundamentals</li></ul></div>
+<div class="card skill"><div class="ic">🤝</div><h3>Professional Skills</h3><ul><li>Communication</li><li>Organization</li><li>Attention to detail</li><li>Adaptability</li><li>Willingness to learn</li></ul></div>
+</div></div></section>
+
+<section id="work" class="dark"><div class="wrap">
+<h2>My Proud YouTube Videos ❤️</h2>
+<p class="lead">These are a few of the YouTube videos I'm proud to showcase in my creative portfolio. Each video represents my interest in content creation, visual storytelling, and short-form video editing. These are selected highlights of my work, not a complete collection of every video I've created.</p>
+<div class="grid" id="videos"></div>
+<p class="note">These are my selected personal creative projects, demonstrating my interest in content creation and editing. They are not client work or paid campaigns.</p>
+<div class="btns"><a class="btn" href="https://www.youtube.com/@srilekhaneduri/videos" target="_blank" rel="noopener">Visit My YouTube Channel</a></div>
+</div></section>
+
+<section id="analytics" class="light"><div class="wrap analytics">
+<div>
+<h2>Data Analytics &amp; Power BI Projects</h2>
+<p class="lead" style="margin-bottom:20px">Alongside my creative interests, I explore data visualization and dashboard development using Microsoft Power BI. My GitHub portfolio contains projects that demonstrate my technical learning and dashboard development.</p>
+<a class="btn blue" href="https://github.com/Lekha2349/power-bi-dashboards" target="_blank" rel="noopener">View My GitHub Projects</a>
+</div>
+<div class="panel" aria-hidden="true">
+<div class="dash"><span style="height:40%"></span><span style="height:65%;animation-delay:.1s"></span><span style="height:50%;animation-delay:.2s"></span><span style="height:85%;animation-delay:.3s"></span><span style="height:60%;animation-delay:.4s"></span><span style="height:95%;animation-delay:.5s"></span></div>
+<div class="chips"><span class="chip">Power BI</span><span class="chip">Dashboards</span><span class="chip">Data visualization</span></div>
+<p style="font-size:.8rem;opacity:.7;margin-top:12px">Decorative illustration, not real data.</p>
+</div></div></section>
+
+<section id="bring"><div class="wrap team">
+<h2>What I Can Bring to Your Team</h2><p class="lead">Contributions I'm ready to make as I start my career.</p>
+<div class="grid">
+<div class="card">📅 Assist with social media content scheduling and publishing.</div>
+<div class="card">✅ Check captions, titles, links, and content formatting.</div>
+<div class="card">🗂️ Organize content calendars and content trackers.</div>
+<div class="card">📈 Support basic social media performance reporting.</div>
+<div class="card">🎥 Assist with short-form video creation.</div>
+<div class="card">✨ Help maintain content quality and consistency.</div>
+<div class="card">🧩 Support routine content operations and coordination.</div>
+<div class="card">📚 Learn new tools and follow established team workflows.</div>
+</div></div></section>
+
+<section id="availability"><div class="wrap">
+<h2>Open to New Opportunities ✨</h2>
+<p class="lead">I'm actively looking for entry-level opportunities in Social Media Operations, Social Media Coordination, Content Operations, Digital Marketing, and related fields. I'm open to both part-time and full-time positions and excited to learn, contribute, and grow with a professional team.</p>
+<div class="emp"><div class="glass">⏱️ Part-Time Opportunities</div><div class="glass">💼 Full-Time Opportunities</div></div>
+<h3>Preferred Job Locations</h3>
+<div class="chips"><span class="chip loc">📍 Hyderabad, India</span><span class="chip loc">💻 Remote Opportunities</span><span class="chip loc">📍 Chennai, India</span><span class="chip loc">📍 Bengaluru, India</span></div>
+<p style="margin-top:20px">I'm interested in suitable opportunities in Hyderabad, remote roles, Chennai, and Bengaluru.</p>
+<div class="btns"><a class="btn" href="#contact">Contact Me for Opportunities</a></div>
+</div></section>
+
+<section id="contact" class="light"><div class="wrap contact">
+<div class="card" style="max-width:640px">
+<h2>Let's Connect 💌</h2>
+<p>Recruiters and hiring teams are welcome to contact me regarding suitable entry-level part-time or full-time opportunities in Hyderabad, remote roles, Chennai, or Bengaluru.</p>
+<dl><dt>Name</dt><dd>Lekha Neduri</dd>
+<dt>Email</dt><dd><a href="mailto:srilekhaneduri0@gmail.com">srilekhaneduri0@gmail.com</a></dd>
+<dt>Phone</dt><dd><a href="tel:+919014188706">+91 90141 88706</a></dd></dl>
+<div class="btns"><a class="btn" href="mailto:srilekhaneduri0@gmail.com">Email Me</a><a class="btn blue" href="tel:+919014188706">Call Me</a></div>
+</div></div></section>
+
+<footer>
+<strong>Lekha Neduri</strong>
+<p>Social Media Operations &bull; Content Coordination &bull; Digital Analytics</p>
+<p>&copy; <span id="yr"></span> Lekha Neduri. All rights reserved.</p>
+</footer>
+<a class="top" href="#home" aria-label="Back to top">↑</a>
+
+<script>
+/* ===== EDIT YOUTUBE VIDEOS HERE (id = the part after /shorts/) ===== */
+const videos=[
+{id:"Pe8aBc4HUUo",url:"https://youtube.com/shorts/Pe8aBc4HUUo?si=NdmMkPwkmjLwIAEP"},
+{id:"8bByDN8ZYSA",url:"https://youtube.com/shorts/8bByDN8ZYSA?si=Oi5G_aW9Jg9jrTlU"},
+{id:"17cruUooGHA",url:"https://youtube.com/shorts/17cruUooGHA?si=XmmFGnoIahiRi16l"},
+{id:"Ukody9bCMw0",url:"https://youtube.com/shorts/Ukody9bCMw0?si=0UrUpmDs560HPHWA"}];
+const box=document.getElementById("videos");
+videos.forEach((v,i)=>{
+ const c=document.createElement("article");c.className="card vid";
+ c.innerHTML=`<div class="thumb" aria-hidden="true">▶<img alt="" loading="lazy" src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg"></div>
+ <div class="body"><h3>Proud Video ${i+1}</h3><a class="btn" href="${v.url}" target="_blank" rel="noopener" aria-label="Watch Proud Video ${i+1} on YouTube">Watch Video</a></div>`;
+ const img=c.querySelector("img");
+ img.onerror=()=>img.remove();
+ img.onload=()=>{if(img.naturalWidth<=120)img.remove()};
+ box.appendChild(c);
+});
+document.getElementById("yr").textContent=new Date().getFullYear();
+function toggleMenu(b){const l=document.getElementById("links");const o=l.classList.toggle("open");b.setAttribute("aria-expanded",o)}
+document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("links").classList.remove("open")));
+</script>
+</body>
+</html>
